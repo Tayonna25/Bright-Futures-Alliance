@@ -3,87 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bright Futures Alliance</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Bright Futures Alliance 🌟</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      padding: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #4facfe;
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #333;
+      color: white;
+    }
+
+    footer a {
+      color: #4facfe;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">Bright Futures Alliance</div>
-    <ul class="nav-links">
-      <li><a href="#mission">Mission</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#housing">Housing</a></li>
-      <li><a href="#health">Health</a></li>
-      <li><a href="#donate">Donate</a></li>
-    </ul>
-    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Bright Futures Alliance</h1>
-      <p>Dismantling systemic racism through education, health, housing, and environment.</p>
-      <a href="#donate" class="btn-primary">Donate Now</a>
-    </div>
+  <header>
+    <h1>Bright Futures Alliance 🌟</h1>
+    <p>Empowering communities through education, health, housing, and environmental justice.</p>
   </header>
 
-  <!-- Mission Section -->
-  <main>
-    <section id="mission" class="section mission-section">
-      <h2>Our Mission</h2>
-      <p>We empower communities to break down barriers and build pathways to equity through education, housing, health, and environmental justice initiatives.</p>
-    </section>
+  <section class="container">
+    <div class="card">
+      <h2>Education</h2>
+      <p>Providing tutoring, mentorship, and college guidance to empower students and break cycles of inequity.</p>
+    </div>
 
-    <!-- Education Section -->
-    <section id="education" class="section">
-      <h2>Education Programs</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Tutoring & Support</h3>
-          <p>One-on-one tutoring and small group programs to help students excel academically.</p>
-        </div>
-        <div class="card">
-          <h3>College Guidance</h3>
-          <p>Assistance with college applications, scholarships, and career exploration.</p>
-        </div>
-        <div class="card">
-          <h3>Mentorship Programs</h3>
-          <p>Connecting students with mentors to guide them academically and professionally.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Housing & Environment Section -->
-    <section id="housing" class="section highlight-section">
-      <h2>Housing & Environment</h2>
-      <p>Advocating for safe housing, green spaces, clean water, and fair urban planning in underserved communities.</p>
-    </section>
-
-    <!-- Health Section -->
-    <section id="health" class="section">
+    <div class="card">
       <h2>Health & Wellness</h2>
-      <p>Promoting equitable access to healthcare, maternal wellness, and mental health support for all.</p>
-    </section>
+      <p>Ensuring equitable access to healthcare, mental health support, and wellness programs for all community members.</p>
+    </div>
 
-    <!-- Donate Section -->
-    <section id="donate" class="section donate-section">
-      <h2>Get Involved</h2>
-      <p>Your contribution helps us provide resources, mentorship, and opportunities to those who need them most.</p>
-      <a href="#" class="btn-primary">Donate Today</a>
-      <a href="#" class="btn-secondary">Volunteer</a>
-    </section>
-  </main>
+    <div class="card">
+      <h2>Housing & Environment</h2>
+      <p>Advocating for safe housing, clean water, green spaces, and sustainable urban planning in underserved communities.</p>
+    </div>
 
-  <!-- Footer -->
+    <div class="card">
+      <h2>Community Engagement</h2>
+      <p>Building partnerships, volunteering opportunities, and initiatives to create stronger, connected communities.</p>
+    </div>
+  </section>
+
   <footer>
-    <p>© 2025 Bright Futures Alliance | All Rights Reserved</p>
+    <p>Join us in making a difference! <a href="#mission">Get Involved</a></p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
+
